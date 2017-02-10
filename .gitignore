@@ -1,6 +1,15 @@
 *.class
 *.log
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
 
+/.vscode
 # sbt specific
 .cache
 .history
