@@ -1,5 +1,7 @@
 GET        /                       controllers.HomeController.index
 
+POST       /v1/users/authenticate  v1.user.UserController.post
+
 ->         /v1/posts               v1.post.PostRouter
 
 # Map static resources from the /public folder to the /assets URL path

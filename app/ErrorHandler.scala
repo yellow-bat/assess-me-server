@@ -54,7 +54,7 @@ class ErrorHandler(environment: Environment,
         case FORBIDDEN =>
           Results.Forbidden(message)
         case NOT_FOUND =>
-          Results.NotFound(message)
+          Results.NotFound(views.html.notFound())
         case clientError if statusCode >= 400 && statusCode < 500 =>
           Results.Status(statusCode)
         case nonClientError =>

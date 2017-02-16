@@ -4,18 +4,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Play REST API</title>
+    <title>assess-me-server</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
 
   <body>
-    <h1>Play REST API</h1>
+      <div class="container">
+          <h1 class="display-1">assess-me-server</h1>
+          <p class="lead">
+              This is a docs page to show you the REST API.
+          </p>
 
-    <p>
-      This is a placeholder page to show you the REST API.
-    </p>
+          <h1>Routes</h1>
 
-    <ul>
-      <li><a href="/v1/posts">/v1/posts</a></li>
-    </ul>
+          <ul>
+              <li>POST /v1/users/authenticate <code>{name: String, password: String}</code></li>
+          </ul>
+      </div>
   </body>
 </html>
