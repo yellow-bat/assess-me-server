@@ -1,8 +1,7 @@
 GET        /                       controllers.HomeController.index
 
-POST       /v1/users/authenticate  v1.user.UserController.post
-
-->         /v1/posts               v1.post.PostRouter
+POST       /v1/sessions            v1.session.SessionController.create
+GET        /v1/sessions/:id        v1.session.SessionController.get(id: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
